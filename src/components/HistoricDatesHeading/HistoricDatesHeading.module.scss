@@ -1,0 +1,33 @@
+.heading {
+  position: relative;
+  margin: 0;
+  padding-top: 170px;
+  padding-left: 80px;
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 120%;
+  color: var(--font-main-color);
+  max-width: 353px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 5px;
+    height: 120px;
+    background: linear-gradient(180deg, #3877ee, #ef5da8);
+    bottom: 10px;
+    left: -1px;
+  }
+
+  @media (width < 426px) {
+    padding-top: 59px;
+    padding-left: 20px;
+    font-size: 20px;
+    line-height: 120%;
+    max-width: 123px;
+
+    &::before {
+      display: none;
+    }
+  }
+}

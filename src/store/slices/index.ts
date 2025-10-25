@@ -1,0 +1,6 @@
+export { fetchScience } from "./science.slice"
+export { fetchLiterature } from "./literature.slice"
+export { fetchCinema } from "./cinema.slice"
+export { fetchTheatre } from "./theatre.slice"
+export { fetchGames } from "./games.slice"
+export { fetchSpace } from "./space.slice"

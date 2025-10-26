@@ -18,7 +18,7 @@ export const createEventSlice = (name: string) => {
     `${name}/fetchAll`,
     async (_, { rejectWithValue }) => {
       try {
-        const response = await fetch(`http://localhost:4173/${name}`)
+        const response = await fetch(`${process.env.REACT_APP_API_BASE_URL}/${name}`)
         if (!response.ok) {
           throw new Error(`HTTP error! status: ${response.status}`)
         }
